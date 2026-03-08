@@ -5,7 +5,7 @@ public class PluginInfo
 {
     /// <summary> The unique identifier for this mod. It shouldn't change between mod versions. 
     /// <remarks> It shouldn't change between mod versions. </remarks>
-    public const string GUID = "Bryan_-000-.FasterFlight meow mrrp rawr";
+    public const string GUID = "Bryan_-000-.FasterFlightmeowmrrprawr";
 
     /// <summary> The user friendly name of the plugin. </summary>
     /// <remarks> Is able to be changed between versions. </remarks>
