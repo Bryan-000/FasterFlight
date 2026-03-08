@@ -12,5 +12,5 @@ public class PluginInfo
     public const string Name = "FasterFlight";
 
     /// <summary> The current version of the plugin. </summary>
-    public const string Version = "1.0.1";
+    public const string Version = "1.1.0";
 }
