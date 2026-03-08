@@ -5,6 +5,7 @@ using HarmonyLib;
 using PluginConfig.API;
 using PluginConfig.API.Fields;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Reflection.Emit;
 using ULTRAKILL.Cheats;
@@ -27,6 +28,7 @@ public class Plugin : BaseUnityPlugin
     public void Awake()
     {
         config = PluginConfigurator.Create(PluginInfo.Name, PluginInfo.GUID);
+        config.SetIconWithURL(Path.Combine(Path.GetDirectoryName(Info.Location), "icon.png"));
 
         flightSpeed = new(config.rootPanel, "Regular Flight speed", "meowmeowmeow mrrrp miaaow rawwrr :3", 1f);
         flightWeeeeSpeed = new(config.rootPanel, "Boost Flight speed", "meow - tequilla", 2.5f);
