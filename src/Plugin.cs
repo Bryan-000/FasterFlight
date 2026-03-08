@@ -28,8 +28,8 @@ public class Plugin : BaseUnityPlugin
     {
         config = PluginConfigurator.Create(PluginInfo.Name, PluginInfo.GUID);
 
-        flightSpeed = new(config.rootPanel, "Regular Noclip speed", "meowmeowmeow mrrrp miaaow rawwrr :3", 1f);
-        flightWeeeeSpeed = new(config.rootPanel, "Boost Noclip speed", "meow - tequilla", 2.5f);
+        flightSpeed = new(config.rootPanel, "Regular Flight speed", "meowmeowmeow mrrrp miaaow rawwrr :3", 1f);
+        flightWeeeeSpeed = new(config.rootPanel, "Boost Flight speed", "meow - tequilla", 2.5f);
         
         new Harmony(PluginInfo.GUID).PatchAll(GetType());
     }
